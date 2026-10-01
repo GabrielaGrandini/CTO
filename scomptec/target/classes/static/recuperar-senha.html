@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SCOMPTEC - Recuperar senha</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-100">
+
+    <main class="min-h-screen flex items-center justify-center px-4 py-8">
+
+        <div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+
+            <div class="mb-8">
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">
+                    Recuperar senha
+                </h1>
+
+                <p class="text-gray-500 mt-2">
+                    Informe seu e-mail para receber as instruções de recuperação.
+                </p>
+            </div>
+
+            <form id="formRecuperacao" class="space-y-5">
+
+                <div>
+                    <label for="email"
+                           class="block text-sm font-medium text-gray-700 mb-2">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="seuemail@gmail.com"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg
+                               focus:outline-none focus:ring-2 focus:ring-green-600
+                               focus:border-transparent">
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full px-6 py-3 rounded-lg
+                           bg-green-700 text-white font-semibold
+                           hover:bg-green-800 transition">
+                    Enviar link de recuperação
+                </button>
+
+                <div class="text-center pt-2">
+                    <a href="index.html"
+                       class="text-sm text-green-700 hover:underline">
+                        Voltar para o login
+                    </a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/recuperar-senha.js"></script>
+    
+</body>
+
+</html>
