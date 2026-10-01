@@ -99,10 +99,12 @@ public class UsuarioController {
                 .orElse(null);
 
         if (usuario == null) {
+        	System.out.println("LOGIN: usuário não encontrado: " +dados.getEmail());
             return ResponseEntity.status(401).build();
         }
 
         if (!passwordEncoder.matches(dados.getSenha(), usuario.getSenha())) {
+        	System.out.println("SENHA: senha inválida para: " +dados.getEmail());
             return ResponseEntity.status(401).build();
         }
 
